@@ -1,0 +1,14 @@
+.add-to-plan{
+    position: absolute;
+    transform: rotate(-90deg);
+    right: -24px;
+    top: 60px;
+    border-radius: 5px 5px 0 0;
+    background: #facd00;
+    color: #091e2b;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 12px;
+    z-index: 2;
+}

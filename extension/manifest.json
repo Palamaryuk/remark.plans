@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "Ремарк.Планы",
+    "description": "Управляй планами на день в 2 клика",
+    "version": "1.0.11",
+    "author": "Alexandr Palamaryuk",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "64": "icon64.png",
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon64.png",
+        "default_title": "Ремарк.Планы",
+        "default_popup": "popup.html"
+    },
+    "background": { 
+        "scripts": [
+            "background.js"
+        ] 
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://marketing.bitrix24.ru/*"
+            ],
+            "js": [
+                "jQuery-3.5.1.min.js",
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
